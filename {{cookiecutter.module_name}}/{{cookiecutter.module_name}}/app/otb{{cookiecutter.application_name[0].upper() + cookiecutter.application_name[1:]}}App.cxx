@@ -1,19 +1,19 @@
 #include "otbWrapperApplication.h"
 #include "otbWrapperApplicationFactory.h"
 
-class EmptyApp : public otb::Wrapper::Application
+class {{cookiecutter.application_name[0].upper() + cookiecutter.application_name[1:]}}App : public otb::Wrapper::Application
 {
 public:
-  typedef EmptyApp Self;
+  typedef {{cookiecutter.application_name[0].upper() + cookiecutter.application_name[1:]}}App Self;
   typedef itk::SmartPointer<Self> Pointer; 
 
   itkNewMacro(Self);
-  itkTypeMacro(EmptyApp, otb::Wrapper::Application);
+  itkTypeMacro({{cookiecutter.application_name[0].upper() + cookiecutter.application_name[1:]}}App, otb::Wrapper::Application);
 private:
   void DoInit()
   {
-    SetName("EmptyApp");
-    SetDescription("Empty application.");
+    SetName("{{cookiecutter.application_name}}App");
+    SetDescription("{{cookiecutter.application_description}}");
   }
 
   void DoUpdateParameters()
@@ -26,4 +26,4 @@ private:
   }
 };
 
-OTB_APPLICATION_EXPORT(EmptyApp)
+OTB_APPLICATION_EXPORT({{cookiecutter.application_name[0].upper() + cookiecutter.application_name[1:]}}App)

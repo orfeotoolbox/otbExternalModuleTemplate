@@ -1,5 +1,7 @@
 {
 	"module_name": "myModule",
+	"module_short_description": "Module for the ORFEO TOOLBOX",
 	"application_name": "myApplication",
+	"application_description": "My application does cool stuff!",
 	"source_filename": "someSource"
 }
