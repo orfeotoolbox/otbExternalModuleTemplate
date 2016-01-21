@@ -1,5 +1,6 @@
 {
 	"full_name": "My name",
+	"copyright": "{{cookiecutter.full_name}}",
 	"email": "me@home.net",
 	"github_username": "my_username",
 	"module_name": "myModule",
