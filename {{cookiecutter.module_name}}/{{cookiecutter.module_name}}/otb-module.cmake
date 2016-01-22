@@ -10,9 +10,15 @@ otb_module({{cookiecutter.module_name}}
   DEPENDS
     OTBCommon
     OTBApplicationEngine
+    {% for depend in cookiecutter.module_depends.split() -%}
+    {{depend}}
+    {% endfor %}
   TEST_DEPENDS
     OTBTestKernel
     OTBCommandLine
+    {% for depend in cookiecutter.test_depends.split() -%}
+    {{depend}}
+    {% endfor %}
   DESCRIPTION
     "${DOCUMENTATION}"
 )
