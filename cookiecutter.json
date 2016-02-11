@@ -1,0 +1,15 @@
+{
+	"full_name": "My name",
+	"copyright": "{{cookiecutter.full_name}}",
+	"email": "me@home.net",
+	"github_username": "my_username",
+	"module_name": "myModule",
+	"module_short_description": "Module for the ORFEO TOOLBOX",
+	"application_name": "myApplication",
+	"application_description": "My application does cool stuff!",
+	"module_depends": "",
+	"test_depends": "",
+	"source_filename": "someSource",
+	"git_repository": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.module_name}}",
+	"git_tag": "master"
+}
